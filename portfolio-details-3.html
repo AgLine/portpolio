@@ -80,13 +80,13 @@
             <div class="portfolio-description">
               <h2>개발내용</h2>
               <p>
-                영화 리뷰의 긍정, 부정, 중립을 구분하여 그래프로 알기쉽게 보여줍니다.
+                영화 리뷰 데이터를 분석하여 긍정, 부정, 중립으로 감성을 분류하고, 그 결과를 그래프로 시각화하여 알기 쉽게 보여주는 시스템을 개발했습니다. 추가적으로 워드클라우드를 통해 주요 키워드의 중요도를 시각적으로 표현했습니다.
               </p>
               <p>
-                <li><strong>전처리</strong> : <br>NULL, 공백, 영어제거 <br>불용어 제거 <br>okt.morphs를 사용하여 토큰화</li>
-                <li><strong>LSTM</strong> : <br>활성함수 softmax<br>로스함수 categorical_crossentropy<br>옵티마이저 rmsprop</li>
-                <li><strong>크롤링</strong> : <br>네이버 영화 리뷰 페이지 전체 크롤링 <br>Html parser을 통해 리뷰 부분만 가져옴</li>
-                <li><strong>워드클라우드</strong> : <br>리뷰의 키워드와 관련 없는 단어를 빼기 위한 불용어를 만듬 <br>많이 나오는 단어의 가중치를 줌</li>
+                <li><strong>데이터 전처리</strong> : <br>데이터의 정제 - NULL, 공백, 영어 제거<br>불용어 제거 - 감성 분석에 불필요한 단어 제거<br>토큰화 - Okt.morphs를 사용하여 문장을 형태소 단위로 나눔</li>
+                <li><strong>감성 분석 모델 LSTM</strong> : <br>활성 함수 - Softmax를 활용하여 출력값을 확률로 변환<br>로스 함수 - Categorical Crossentropy를 사용하여 분류 모델 최적화<br>옵티마이저 - RMSprop을 사용해 학습 속도와 안정성을 향상</li>
+                <li><strong>웹 크롤링</strong> : <br>네이버 영화 리뷰 페이지를 전체 크롤링하여 대량의 데이터를 수집 <br>HTML Parser를 이용해 리뷰 텍스트 부분만 추출</li>
+                <li><strong>워드클라우드</strong> : <br>불필요한 단어를 제외하기 위해 리뷰 데이터 전용 불용어 사전 구축 <br>가중치를 부여하여 많이 언급된 단어에 비례해 가시성을 강화</li>
               </p>
             </div>
           </div>

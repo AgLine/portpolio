@@ -84,14 +84,14 @@
             <div class="portfolio-description">
               <h2>개발내용</h2>
               <p>
-                jsp와 bootstrap을 사용하여 게시판을 만들었습니다.
+                JSP와 Bootstrap을 사용하여 간단하고 직관적인 게시판 시스템을 개발했습니다. 게시글 작성, 조회, 수정, 삭제 기능을 포함하여 사용자 권한과 세션 관리 기능을 통해 효율적인 게시판 운영이 가능하도록 구현했습니다.
               </p>
               <p>
-                <li><strong>Create</strong> : <br>로그인된 사용자만 글쓰기 가능</li>
-                <li><strong>Read</strong> : <br>모든 사용자는 글을 확인할 수 있음</li>
-                <li><strong>Update</strong> : <br>session의 ID와 글 작성자가 동일할 경우 수정 버튼 활성화</li>
-                <li><strong>Delete</strong> : <br>session의 ID와 글 작성자가 동일할 경우 삭제 버튼 활성화</li>
-                <li><strong>session</strong> : <br>session을 통한 로그인, 로그아웃</li>
+                <li><strong>글작성 Create</strong> : <br>로그인된 사용자만 글쓰기 가능<br>사용자 세션을 확인하여 권한 부여</li>
+                <li><strong>글조회 Read</strong> : <br>로그인 여부와 관계없이 모든 사용자에게 게시글 내용 제공</li>
+                <li><strong>글수정 Update</strong> : <br>게시글 작성자와 현재 세션의 사용자 ID가 동일할 경우에만 수정 버튼 활성화</li>
+                <li><strong>글삭제 Delete</strong> : <br>게시글 작성자와 현재 세션의 사용자 ID가 동일할 경우에만 삭제 버튼 활성화<br>실제로 데이터를 삭제하지 않고, 해당 글이 보이지 않도록 상태를 변경</li>
+                <li><strong>사용자 세션 관리 session</strong> : <br>Session 기반 로그인/로그아웃 기능 제공<br>세션 데이터를 통해 사용자 권한과 인증 상태 유지</li>
               </p>
             </div>
           </div>
