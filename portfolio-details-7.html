@@ -51,17 +51,20 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-7-1.png" alt="HAProxy웹서버이중화">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-7-2.png" alt="DB접속">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-details-7-3.png" alt="DB결과">
                 </div>
 
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-7-4.png" alt="네트워크구성도">
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -69,18 +72,25 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>팀프로젝트 - 온프레미스 네트워크 환경 구축</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>사용기술</strong>: Rocky Linux 9, Apache, BIND, HAProxy, MySQL, PHP</li>
+                <li><strong>개발환경</strong>: VMware Workstation Pro, MobaXterm</li>
+                <li><strong>프로젝트 기간</strong>: 2025.04</li>
+                <li><strong>URL</strong>: <a href="https://github.com/AgLine/On-Premises-Network-and-Server-Architecture" target="_blank">https://github.com/AgLine/On-Premises-Network-and-Server-Architecture</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>개발내용</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                내부망과 외부망을 분리하여 실제 온프레미스 환경을 시뮬레이션하고, DNS 서버를 통한 도메인 이름 관리, Apache 웹 서버 구축, HAProxy를 활용한 로드밸런싱 및 이중화 구성, PHP로 작성된 웹페이지에서 MySQL과의 연동을 통해 DB 조회 결과를 출력함. 외부 접속을 위한 포트포워딩 및 보안 설정을 함께 구성하여 전체 네트워크 아키텍처를 완성함
+              </p>
+              <p>
+                <li><strong>Router</strong> : <br> ens160, ens224 네트워크 설정 및 방화벽 영역 분리 <br>DHCP 설정으로 내부 IP 자동 할당 <br>방화벽(http 서비스 허용) 및 포트포워딩(NAT) 설정</li>
+                <li><strong>DNS 서버</strong> : <br>내부 도메인 wxforecast.gisang.chung <br>정방향/역방향 영역(zone) 파일 작성 <br>내부 클라이언트의 DNS 요청 처리</li>
+                <li><strong>Web 서버</strong> : <br>Apache 설치 및 index 페이지 구성 <br>내부망에서 DNS로 접근 가능 확인</li>
+                <li><strong>HAProxy</strong> : <br>roundrobin방식을 사용한 Web01,Web02서버 로드밸런싱<br>option httpchk을 통해 웹서버 정상 작동 여부 확인</li>
+                <li><strong>DB연동</strong> : <br>telnet명령어를 통해 3306포트가 열려있는지 확인 후 MySQL 접속<br>웹서버에 작성한 db.php 파일을 통해 DB 쿼리 결과를 웹페이지로 출력</li>
               </p>
             </div>
           </div>
