@@ -68,21 +68,22 @@
               <h3>개인프로젝트 - 로또번호추천 사이트</h3>
               <ul>
                 <li><strong>사용기술</strong>: JAVA, springboot, JSP, JSTL</li>
-                <li><strong>개발환경</strong>: Spring-tool-suite, Maven</li>
+                <li><strong>개발환경</strong>: IntelliJ, Maven, Amazon Linux EC2</li>
                 <li><strong>프로젝트 기간</strong>: 2022.06</li>
-                <li><strong>URL</strong>: <a href="https://github.com/AgLine/lotto" target="_blank">https://github.com/AgLine/lotto</a><br><a href="http://agline.cafe24.com/lotto" target="_blank">http://agline.cafe24.com/lotto</a></li>
+                <li><strong>URL</strong>: <a href="https://github.com/AgLine/lotto" target="_blank">https://github.com/AgLine/lotto</a><br><a href="http://lotto.lineee.shop/" target="_blank">http://lotto.lineee.shop/</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>개발내용</h2>
               <p>
-                사용자가 선택한 개수만큼 1~5개의 로또 번호를 추천해 주는 서비스를 개발했습니다. 랜덤 번호 생성과 중복 방지를 통해 신뢰성을 확보하고, 직관적인 결과 출력과 예외 처리를 통해 사용자 편의성을 향상했습니다. 최종적으로 서비스를 카페24 호스팅 환경에 배포했습니다.
+                사용자가 원하는 수량(1~5개)의 로또 번호 세트를 랜덤으로 추천해 주는 웹 서비스를 개발했습니다. 번호 중복 방지를 통해 신뢰성을 높였고, 직관적인 테이블 형태의 결과 출력과 예외 처리로 사용자 편의성을 고려했습니다. 완성된 서비스는 AWS EC2 환경에 배포하고, 가비아에서 구입한 도메인을 AWS Route 53을 통해 연결하여 퍼블릭하게 접근 가능하도록 구성했습니다.
               </p>
               <p>
                 <li><strong>랜덤번호생성</strong> : <br>1~45 사이의 번호를 중복 없이 랜덤으로 생성<br>사용자 지정 범위(1~5개)에 따라 결과 제공</li>
                 <li><strong>결과값 출력</strong> : <br>추천된 번호를 Table 형태로 시각화하여 깔끔하게 출력</li>
                 <li><strong>예외처리</strong> : <br>로또 번호의 개수를 선택하지 않고 번호 생성을 시도할 경우, 경고창을 통해 안내 메시지 제공</li>
-                <li><strong>배포</strong> : <br>완성된 서비스를 카페24 호스팅 환경에 배포하여 웹 상에서 접근 가능하도록 설정</li>
+                <li><strong>배포</strong> : <br>AWS EC2 인스턴스에 WAR 패키지 형태로 배포. Tomcat 10을 사용해 실행</li>
+                <li><strong>도메인</strong> : <br>가비아에서 구입한 도메인을 AWS Route 53에 연결하여 자체 주소(http://lotto.lineee.shop)로 접속 가능하도록 설정</li>
               </p>
             </div>
           </div>
